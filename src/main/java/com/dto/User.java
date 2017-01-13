@@ -72,22 +72,5 @@ public class User implements Serializable {
 	@ManyToMany(mappedBy = "registeredUsers", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private List<Course> courses = new ArrayList<>();
 
-	public LocalDateTime getCreatedDateTime() {
-		return createdDateTime;
-	}
-
-	public void setCreatedDateTime(LocalDateTime createdDateTime) {
-		this.createdDateTime = createdDateTime;
-	}
-
-	public LocalDateTime getUpdatedDateTime() {
-		return updatedDateTime;
-	}
-
-	public void setUpdatedDateTime(LocalDateTime updatedDateTime) {
-		this.updatedDateTime = updatedDateTime;
-	}
-	
-	
 
 }

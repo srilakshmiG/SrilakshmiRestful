@@ -76,24 +76,6 @@ public class Course implements Serializable {
 	private Integer versionId;
 
 	@Transient
-	private String authorFullName;
-
-	public LocalDateTime getCreatedDateTime() {
-		return createdDateTime;
-	}
-
-	public void setCreatedDateTime(LocalDateTime createdDateTime) {
-		this.createdDateTime = createdDateTime;
-	}
-
-	public LocalDateTime getUpdatedDateTime() {
-		return updatedDateTime;
-	}
-
-	public void setUpdatedDateTime(LocalDateTime updatedDateTime) {
-		this.updatedDateTime = updatedDateTime;
-	}
-	
-	
+	private String authorFullName;	
 
 }
